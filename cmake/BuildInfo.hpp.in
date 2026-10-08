@@ -1,7 +1,0 @@
-#pragma once
-namespace andueprober::build {
-inline constexpr const char* revision = "@ANDUEPROBER_SOURCE_REVISION@";
-inline constexpr const char* dumperRevision = "@ANDUEPROBER_DUMPER_REVISION@";
-inline constexpr const char* swapRevision = "@ANDUEPROBER_MEMORY_REVISION@";
-inline constexpr const char* kittyRevision = "@ANDUEPROBER_KITTY_REVISION@";
-}

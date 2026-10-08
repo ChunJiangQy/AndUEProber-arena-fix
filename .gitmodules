@@ -1,7 +1,4 @@
 [submodule "external/AndUEDumper"]
 	path = external/AndUEDumper
 	url = https://github.com/DumpA1n/AndUEDumper.git
-	branch = andueprober
-[submodule "external/AndSwapChainHook"]
-	path = external/AndSwapChainHook
-	url = https://github.com/DumpA1n/AndSwapChainHook.git
+	branch = andueprober-clean
