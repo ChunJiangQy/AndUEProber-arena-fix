@@ -102,6 +102,9 @@ public:
             offsets.TUObjectArray.MaxElements = offsetof(FChunkedFixedUObjectArray, MaxElements);
             offsets.TUObjectArray.MaxChunks = offsetof(FChunkedFixedUObjectArray, MaxChunks);
             offsets.TUObjectArray.NumChunks = offsetof(FChunkedFixedUObjectArray, NumChunks);
+            // FUObjectItem keeps Flags at 0x8 but its SerialNumber at 0x14: the engine's
+            // FWeakObjectPtr::Get/IsValid and AllocateSerialNumber all use item + 0x14.
+            offsets.FUObjectItem.SerialNumber = 0x14;
             offsets.UObject.ClassPrivate = sizeof(void *);
             offsets.UObject.OuterPrivate = offsets.UObject.ClassPrivate + sizeof(void *);
             offsets.UObject.ObjectFlags = offsets.UObject.OuterPrivate + sizeof(void *);
